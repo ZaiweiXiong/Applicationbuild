@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+
+<html>
+<head><head>
+
+    <title>CA Technologies Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="CA Technologies" />
+    <!--<meta name="theme-plugin-version" content="${plugin.version}"/>
+    <meta name="theme-plugin-name" content="${project.name}"/>-->
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <meta name="lang" content="en_US" />
+    <meta name="lang-code" content="en_US" />
+    <!--<meta name="space-key" content="$repository.key"/>
+    <meta name="confluence-content-type" content="$page.type"/>
+    <meta name="space-name" content="$repository.name"/>
+    <meta name="page-id" content="$!page.id"/>-->
+    <meta name="base-url" content="http://luowe01g2:8080/dispatcher" />
+    <meta name="is-mobile-device" content="false" />
+    <meta name="is-authenticated" content="$user.loggedIn" />-->
+    <meta name="theme-base-url" content="http://luowe01g2:8080/dispatcher" />
+    <!--<meta name="viewport-prefix" content="$viewport.getLink()"/>
+    <meta name="remote-user" content="$user.username"/>-->
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/js/respond.js"></script>
+    <script type="text/javascript" src="assets/js/select2.full.js"></script>
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	
+	<link rel="stylesheet" href="assets/css/test.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/select2.css" />
+    <link rel="stylesheet" href="assets/css/select2-bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/mobile-menu.css" />
+
+</head></head>
+<body class="body-ca">
+<div><div class="header body-ca">
+    <div class="header-bar">
+        <div class="header__container">
+            <a href="#" id="skip-to-content" class="sr-only sr-only-focusable"><span>Skip to content</span></a>
+            <a class="header__logo icon-logo" data-toggle="tooltip" data-placement="right" href="luowe01g2:8080/dispatcher/homepage" title="Documentation Portal Home Page"></a>
+            <ul class="header__navigation lite">
+                <li class="header__navigation-top">
+                    <a href="http://www.ca.com/us/why-ca.html?intcmp=headernav"><span>Why CA</span></a>
+                </li>
+                <li class="header__navigation-top">
+                    <a href="http://www.ca.com/us/products.html?intcmp=headernav"><span>Products</span></a>
+                </li>
+                <li class="header__navigation-top">
+                    <a href="http://www.ca.com/us/education-training.html?intcmp=headernav"><span>Education &amp; Training</span></a>
+                </li>
+                <li class="header__navigation-top">
+                    <a href="http://www.ca.com/us/services-support.html?intcmp=headernav"><span>Services &amp; Support</span></a>
+                </li>
+                <li class="header__navigation-top">
+                    <a href="http://www.ca.com/us/partners.html?intcmp=headernav"><span>Partners</span></a>
+                </li>
+            </ul>
+
+            <div class="header__navigation-login">
+                <!--#if($user.loggedIn)
+                <div class="btn-group">
+                    <button type="button"
+                            class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-label="#{com.ca.tools.dispatcher.homepage.header.account.label}">
+                    <i class="icon-profile account-icon"></i>
+                        <span th:text="#{com.ca.tools.dispatcher.homepage.header.account.label}"></span>
+                    <span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="${themeHelper.settings.baseUrl}/logout.action"><span th:text="#{
+                                com.ca.tools.dispatcher.homepage.header.logout.label}"></span></a>
+                        </li>
+                        <li>
+                            <a href="http://www.ca.com/us/register/updateprofile.aspx?returnURL=/us/default.aspx"><span th:text="#{
+                                com.ca.tools.dispatcher.homepage.header.profile.label}"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                #else
+                #if($isSearch)
+                #set($redirectLink="$request.getRequestURL()?$request.getQueryString()")
+                #elseif($isBlogOverview)
+                #set($redirectLink=$request.getRequestURL())
+                #elseif($isError)
+                #set($redirectLink=$viewport.getAbsoluteLink())
+                #elseif($isPage)
+                #set($redirectLink="$themeHelper.settings.baseUrl/dashboard.action")
+                #end-->
+
+                <a href="${themeHelper.settings.baseUrl}/plugins/servlet/saml?os_destination=$redirectLink"><i class="icon-profile account-icon"></i><span>Sign in</span></a>
+
+                <!--#end-->
+            </div>
+        </div>
+    </div>
+</div></div>
+<div><a id="mobile-menu-expander" class="nav-expander fixed hidden-print" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    <span class="menu-label">Menu</span>
+</a>
+
+<div id="mobile-blanket" class="hidden-print">
+</div>
+
+<div id="mobile-menu" class="hidden-print">
+    <div id="menu-close">
+        <a id="menu-close-btn" href="#">
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+    </div>
+    <div id="menu-header">
+        <span>Menu</span>
+    </div>
+
+    <div id="menu-body">
+        <ul class="nav nav-pills nav-stacked">
+            <li>
+                <span>My Account</span>
+                <ul id="my-account">
+                    <!--#if($user.loggedIn)
+                    <li>
+                        <a href="${themeHelper.settings.baseUrl}/logout.action"><span th:text="#{com.ca.tools.dispatcher.homepage.header.logout.label}"></span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.ca.com/us/register/updateprofile.aspx?returnURL=/us/default.aspx"><span th:text="#{com.ca.tools.dispatcher.homepage.header.profile.label}"></span></a>
+                    </li>
+                    #else
+                    #if($isSearch)
+                    #set($redirectLink="$request.getRequestURL()?$request.getQueryString()")
+                    #elseif($isBlogOverview)
+                    #set($redirectLink=$request.getRequestURL())
+                    #elseif($isError)
+                    #set($redirectLink=$viewport.getAbsoluteLink())
+                    #elseif($isPage)
+                    #set($redirectLink="$themeHelper.settings.baseUrl$page.link")
+                    #end-->
+
+                    <li>
+                        <a href="${themeHelper.settings.baseUrl}/plugins/servlet/saml?os_destination=$redirectLink"><span>Sign in</span></a>
+                    </li>
+                    <!--#end-->
+                </ul>
+            </li>
+
+            <li class="header__navigation-top">
+                <a href="http://www.ca.com/us/why-ca.html?intcmp=headernav"><span>Why CA</span></a>
+            </li>
+            <li class="header__navigation-top">
+                <a href="http://www.ca.com/us/products.html?intcmp=headernav"><span>Products</span></a>
+            </li>
+            <li class="header__navigation-top">
+                <a href="http://www.ca.com/us/education-training.html?intcmp=headernav"><span>Education &amp; Training</span></a>
+            </li>
+            <li class="header__navigation-top">
+                <a href="http://www.ca.com/us/services-support.html?intcmp=headernav"><span>Services &amp; Support</span></a>
+            </li>
+            <li class="header__navigation-top">
+                <a href="http://www.ca.com/us/partners.html?intcmp=headernav"><span>Partners</span></a>
+            </li>
+        </ul>
+    </div>
+</div></div>
+<div><div id="site-banner">
+
+    <div id="site-heading">
+        <h1 id=""><span>CA Technologies Documentation</span></h1>
+
+        <div id="brand-message">
+            <span>powered by DocOps</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+             <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="product-select-wrapper">
+              
+			   <div id="product" style="margin-bottom:20px">
+                 
+               </div>
+			<div id="result"  class="s" >
+				
+			</div>
+		</div>
+       </div>
+
+    </div>
+</div></div>
+<div><div class="ca-footer parsys body-ca">
+    <div class="ca-footer__wrapper">
+        <div class="ca-footer__column2">
+            <a href="http://www.facebook.com/CATechnologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-facebook">&nbsp;</span>
+                <span class="icon-label">Facebook</span>
+            </a>
+            <a href="https://plus.google.com/+CATechnologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-googleplus">&nbsp;</span>
+                <span class="icon-label">Google+</span>
+            </a>
+            <a href="http://www.linkedin.com/company/ca-technologies" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-linkedin">&nbsp;</span>
+                <span class="icon-label">LinkedIn</span>
+            </a>
+            <a href="http://twitter.com/CAInc" target="_self" class="ca-footer-icon-link">
+                <span class="ca-footer-icon icon-circle-twitter">&nbsp;</span>
+                <span class="icon-label">Twitter</span>
+            </a>
+        </div>
+        <div class="ca-footer__column1">
+            <a target="_self" class="call-to-action-footer__link" href="http://www.ca.com/us/contact.aspx"><span>Contact Us</span></a>
+            <a target="_self" class="call-to-action-footer__link" href="http://www.ca.com/us/privacy.aspx"><span>Privacy Policy</span></a>
+            <a target="_self" class="call-to-action-footer__link" href="http://www.ca.com/us/data-transfers.aspx"><span>Data Transfers</span></a>
+            <a target="_self" class="call-to-action-footer__link" href="http://www.ca.com/us/legal.aspx"><span>Legal Notices</span></a>
+            <a target="_self" class="call-to-action-footer__link" href="http://www.ca.com/us/sitemap.aspx"><span>Site Map</span></a>
+            <br><span>Copyright © 2016 CA. All rights reserved.</span></br>
+        </div>
+    </div>
+</div></div>
+</body>
+</html>
